@@ -14,7 +14,6 @@ header, main, nav, aside, .sidebar2, footer{
     border: 2px solid cyan;
     padding: 20px;
     color: white;
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
