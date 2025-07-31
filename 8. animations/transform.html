@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100vh;
+            width: 100vw;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+        }
+        .one{
+            background-color: blueviolet;
+        }
+        .two{
+            background-color: cyan;
+        }
+        .three{
+            background-color: pink;
+        }
+        .one:hover{
+            transform: rotate(5deg) scale(1.5) translate(50%, 50%);
+            /* transform: scale(1.5); */
+            /* transform: skew(25deg, 25deg);
+            transform: translate(100%);  */
+        }
+        .two:hover{
+            /* transform: rotateX(40deg); */
+            transform: scaleX(1.5);
+        }
+        .three:hover{
+            transform: rotateY(50deg);
+            /* transform: scaleY(1.5); */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            transform: rotate(30deg);
+            /* background-color: black; */
+        }
+        .box{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            /* animation-name: move-box;
+            animation-duration: 5s; */
+            /* animation-iteration-count: infinite     //wont stop;
+            animation-direction: alternate;    //The oppositie of the animation*/
+            /* transition-timing-function: ease-in;
+            animation-fill-mode: forwards; */
+            animation: move-box 3s linear 1s infinite alternate forwards;
+        }
+        .one{
+            background-color: blueviolet;
+        }
+        @keyframes move-box{
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 0px;
+                top: 100%;
+                transform: translateY(-100%);
+                /* border-radius: 50%; */
+                background-color: yellow;
+            }
+            50%{
+                left: 100%;
+                top: 100%;
+                transform: translate(-100%, -100%);
+                background-color: green;
+            }
+            75%{
+                top: 0;
+                left: 100%;
+                transform: translateX(-100%);
+                /* border-radius: 20%; */
+                background-color: aqua;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                /* transform: translateX(-100%); */
+                /* border-radius: 20%; */
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box one"></div>
+    </div>
+</body>
+</html>
