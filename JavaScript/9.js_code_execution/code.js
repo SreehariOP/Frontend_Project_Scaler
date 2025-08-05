@@ -1,4 +1,4 @@
-let a = 10;
+var a = 10;
 function fn(){
     
     console.log("i am fn");
